@@ -13,12 +13,12 @@ const initialValues = {
  number: "",
 };
 
-const ContactForm = ({ addContact }) => {
+const ContactForm = ({ addNewContact }) => {
   const nameFieldId = useId();
   const numberFieldId = useId();
 
     const handleSubmit = (values, actions) => {
-        addContact(values);
+        addNewContact(values);
         actions.resetForm();
     }
 
