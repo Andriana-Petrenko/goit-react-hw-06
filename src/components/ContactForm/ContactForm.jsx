@@ -27,9 +27,6 @@ const ContactForm = () => {
     dispatch(addContact(finalContact));
     actions.resetForm();
     }
-
-  
-
   return (
       <Formik initialValues={initialValues} onSubmit= {handleSubmit} validationSchema={ContactFormSchema}>
       <Form className={css.form}>
